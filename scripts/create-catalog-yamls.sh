@@ -11,6 +11,8 @@ metadata:
   name: api-$i
   title: API $i
   description: The place to be, for great artists
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   type: grpc
   lifecycle: experimental
@@ -45,6 +47,7 @@ metadata:
   labels:
     example.com/custom: custom_label_value
   annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
     example.com/service-discovery: artistweb
   tags:
     - java
@@ -75,6 +78,8 @@ metadata:
   name: group-$i
   title: Group $i
   description: The place to be, for great artists
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   type: team
   children: []
@@ -95,6 +100,8 @@ metadata:
   name: system-$i
   title: System $i
   description: The place to be, for great artists
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   owner: group-$i
 ---
@@ -113,6 +120,8 @@ metadata:
   name: template-$i
   title: Template $i
   description: An example template
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   owner: group-$i
   type: service

@@ -4,6 +4,8 @@ metadata:
   name: group-1
   title: Group 1
   description: The place to be, for great artists
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   type: team
   children: []
@@ -15,6 +17,8 @@ metadata:
   name: group-2
   title: Group 2
   description: The place to be, for great artists
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   type: team
   children: []
@@ -26,6 +30,8 @@ metadata:
   name: group-3
   title: Group 3
   description: The place to be, for great artists
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   type: team
   children: []
@@ -37,6 +43,8 @@ metadata:
   name: group-4
   title: Group 4
   description: The place to be, for great artists
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   type: team
   children: []
@@ -48,6 +56,8 @@ metadata:
   name: group-5
   title: Group 5
   description: The place to be, for great artists
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   type: team
   children: []
@@ -59,6 +69,8 @@ metadata:
   name: group-6
   title: Group 6
   description: The place to be, for great artists
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   type: team
   children: []
@@ -70,6 +82,8 @@ metadata:
   name: group-7
   title: Group 7
   description: The place to be, for great artists
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   type: team
   children: []
@@ -81,6 +95,8 @@ metadata:
   name: group-8
   title: Group 8
   description: The place to be, for great artists
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   type: team
   children: []
@@ -92,6 +108,8 @@ metadata:
   name: group-9
   title: Group 9
   description: The place to be, for great artists
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   type: team
   children: []
@@ -103,6 +121,8 @@ metadata:
   name: group-10
   title: Group 10
   description: The place to be, for great artists
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/christoph-jerolimov/rhdh-loadtests/tree/main/techdocs
 spec:
   type: team
   children: []
