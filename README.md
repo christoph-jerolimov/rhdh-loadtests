@@ -15,15 +15,15 @@ upstream:
       catalog:
         locations:
           - type: url
-            target: https://github.com/christoph-jerolimov/backstage-loadtests/blob/main/catalog/components-10000.yaml
+            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/components-10000.yaml
             rules:
               - allow: [Component]
           - type: url
-            target: https://github.com/christoph-jerolimov/backstage-loadtests/blob/main/catalog/groups-100.yaml
+            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/groups-100.yaml
             rules:
               - allow: [Group]
           - type: url
-            target: https://github.com/christoph-jerolimov/backstage-loadtests/blob/main/catalog/systems-100.yaml
+            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/systems-100.yaml
             rules:
               - allow: [System]
 ```
