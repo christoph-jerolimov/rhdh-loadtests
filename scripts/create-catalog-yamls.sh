@@ -142,7 +142,7 @@ spec:
       input:
         recipients: entity
         entityRefs:
-          - user:default/guest
+          - user:development/guest
         title: \${{ parameters.message }}
 ---
 EOF

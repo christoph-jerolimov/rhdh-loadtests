@@ -73,7 +73,7 @@ spec:
       input:
         recipients: entity
         entityRefs:
-          - user:default/guest
+          - user:development/guest
         title: 'Template executed'
         info: 'Your template has been executed'
         severity: 'normal'
