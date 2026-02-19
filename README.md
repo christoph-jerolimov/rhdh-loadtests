@@ -6,6 +6,12 @@ Start an OpenShift cluster with OpenShift GitOps operator, then:
 oc apply -f argocd/app-of-apps.yaml
 ```
 
+or, without cloning:
+
+```bash
+oc apply -f https://raw.githubusercontent.com/christoph-jerolimov/rhdh-loadtests/refs/heads/main/argocd/app-of-apps.yaml
+```
+
 ## Catalog entities
 
 Add and adjust the following catalog snippet into your `app-config.yaml`.
