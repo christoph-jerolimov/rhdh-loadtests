@@ -1,0 +1,14 @@
+site_name: TechDocs Demo
+site_description: This is a small demo
+repo_url: https://github.com/christoph-jerolimov/rhdh-loadtests
+edit_uri: edit/main/techdocs/docs
+
+#plugins:
+#  - techdocs-core
+
+nav:
+  - System: index.md
+  - Services:
+      - Page 1: page-1.md
+      - Page 2: page-2.md
+      - Page 3: page-3.md
