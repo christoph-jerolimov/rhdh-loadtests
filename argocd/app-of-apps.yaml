@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  # namespace: argocd or openshift-gitops
+  namespace: openshift-gitops
   name: rhdh-loadtests
 spec:
   description: rhdh-loadtests applications

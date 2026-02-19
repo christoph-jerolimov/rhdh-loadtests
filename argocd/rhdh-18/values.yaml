@@ -30,7 +30,7 @@ upstream:
   backstage:
     appConfig:
       app:
-        title: RHDH 1.8 Loadtest
+        title: RHDH 1.8 loadtest
 
       catalog:
         locations:

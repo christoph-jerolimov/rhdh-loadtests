@@ -32,7 +32,7 @@ upstream:
 
     appConfig:
       app:
-        title: RHDH 1.9 Loadtest
+        title: RHDH 1.9 loadtest
 
       catalog:
         locations:
