@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: component-1
+  title: Component 1
   description: The place to be, for great artists
   labels:
     example.com/custom: custom_label_value
@@ -25,6 +26,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: component-2
+  title: Component 2
   description: The place to be, for great artists
   labels:
     example.com/custom: custom_label_value
@@ -48,6 +50,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: component-3
+  title: Component 3
   description: The place to be, for great artists
   labels:
     example.com/custom: custom_label_value
@@ -71,6 +74,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: component-4
+  title: Component 4
   description: The place to be, for great artists
   labels:
     example.com/custom: custom_label_value
@@ -94,6 +98,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: component-5
+  title: Component 5
   description: The place to be, for great artists
   labels:
     example.com/custom: custom_label_value
@@ -117,6 +122,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: component-6
+  title: Component 6
   description: The place to be, for great artists
   labels:
     example.com/custom: custom_label_value
@@ -140,6 +146,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: component-7
+  title: Component 7
   description: The place to be, for great artists
   labels:
     example.com/custom: custom_label_value
@@ -163,6 +170,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: component-8
+  title: Component 8
   description: The place to be, for great artists
   labels:
     example.com/custom: custom_label_value
@@ -186,6 +194,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: component-9
+  title: Component 9
   description: The place to be, for great artists
   labels:
     example.com/custom: custom_label_value
@@ -209,6 +218,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: component-10
+  title: Component 10
   description: The place to be, for great artists
   labels:
     example.com/custom: custom_label_value

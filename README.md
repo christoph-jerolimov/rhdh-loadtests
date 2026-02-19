@@ -6,7 +6,7 @@ WIP
 
 Add and adjust the following catalog snippet into your `app-config.yaml`.
 
-Import 10, 100, 1000 or 10000 `components`, `groups` and `systems` entities as shown below:
+Import 10, 100, 1000 or 10000 `components`, `groups`, `systems`, `apis` and `templates` entities as shown below:
 
 ```yaml
 upstream:
@@ -19,13 +19,21 @@ upstream:
             rules:
               - allow: [Component]
           - type: url
-            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/groups-100.yaml
+            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/groups-1000.yaml
             rules:
               - allow: [Group]
           - type: url
-            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/systems-100.yaml
+            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/systems-1000.yaml
             rules:
               - allow: [System]
+          - type: url
+            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/apis-1000.yaml
+            rules:
+              - allow: [API]
+          - type: url
+            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/templates-1000.yaml
+            rules:
+              - allow: [Template]
 ```
 
 ## Plugins

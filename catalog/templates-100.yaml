@@ -1,0 +1,2900 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-1
+  title: Template 1
+  description: An example template
+spec:
+  owner: group-1
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-2
+  title: Template 2
+  description: An example template
+spec:
+  owner: group-2
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-3
+  title: Template 3
+  description: An example template
+spec:
+  owner: group-3
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-4
+  title: Template 4
+  description: An example template
+spec:
+  owner: group-4
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-5
+  title: Template 5
+  description: An example template
+spec:
+  owner: group-5
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-6
+  title: Template 6
+  description: An example template
+spec:
+  owner: group-6
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-7
+  title: Template 7
+  description: An example template
+spec:
+  owner: group-7
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-8
+  title: Template 8
+  description: An example template
+spec:
+  owner: group-8
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-9
+  title: Template 9
+  description: An example template
+spec:
+  owner: group-9
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-10
+  title: Template 10
+  description: An example template
+spec:
+  owner: group-10
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-11
+  title: Template 11
+  description: An example template
+spec:
+  owner: group-11
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-12
+  title: Template 12
+  description: An example template
+spec:
+  owner: group-12
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-13
+  title: Template 13
+  description: An example template
+spec:
+  owner: group-13
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-14
+  title: Template 14
+  description: An example template
+spec:
+  owner: group-14
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-15
+  title: Template 15
+  description: An example template
+spec:
+  owner: group-15
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-16
+  title: Template 16
+  description: An example template
+spec:
+  owner: group-16
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-17
+  title: Template 17
+  description: An example template
+spec:
+  owner: group-17
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-18
+  title: Template 18
+  description: An example template
+spec:
+  owner: group-18
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-19
+  title: Template 19
+  description: An example template
+spec:
+  owner: group-19
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-20
+  title: Template 20
+  description: An example template
+spec:
+  owner: group-20
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-21
+  title: Template 21
+  description: An example template
+spec:
+  owner: group-21
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-22
+  title: Template 22
+  description: An example template
+spec:
+  owner: group-22
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-23
+  title: Template 23
+  description: An example template
+spec:
+  owner: group-23
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-24
+  title: Template 24
+  description: An example template
+spec:
+  owner: group-24
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-25
+  title: Template 25
+  description: An example template
+spec:
+  owner: group-25
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-26
+  title: Template 26
+  description: An example template
+spec:
+  owner: group-26
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-27
+  title: Template 27
+  description: An example template
+spec:
+  owner: group-27
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-28
+  title: Template 28
+  description: An example template
+spec:
+  owner: group-28
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-29
+  title: Template 29
+  description: An example template
+spec:
+  owner: group-29
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-30
+  title: Template 30
+  description: An example template
+spec:
+  owner: group-30
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-31
+  title: Template 31
+  description: An example template
+spec:
+  owner: group-31
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-32
+  title: Template 32
+  description: An example template
+spec:
+  owner: group-32
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-33
+  title: Template 33
+  description: An example template
+spec:
+  owner: group-33
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-34
+  title: Template 34
+  description: An example template
+spec:
+  owner: group-34
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-35
+  title: Template 35
+  description: An example template
+spec:
+  owner: group-35
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-36
+  title: Template 36
+  description: An example template
+spec:
+  owner: group-36
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-37
+  title: Template 37
+  description: An example template
+spec:
+  owner: group-37
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-38
+  title: Template 38
+  description: An example template
+spec:
+  owner: group-38
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-39
+  title: Template 39
+  description: An example template
+spec:
+  owner: group-39
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-40
+  title: Template 40
+  description: An example template
+spec:
+  owner: group-40
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-41
+  title: Template 41
+  description: An example template
+spec:
+  owner: group-41
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-42
+  title: Template 42
+  description: An example template
+spec:
+  owner: group-42
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-43
+  title: Template 43
+  description: An example template
+spec:
+  owner: group-43
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-44
+  title: Template 44
+  description: An example template
+spec:
+  owner: group-44
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-45
+  title: Template 45
+  description: An example template
+spec:
+  owner: group-45
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-46
+  title: Template 46
+  description: An example template
+spec:
+  owner: group-46
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-47
+  title: Template 47
+  description: An example template
+spec:
+  owner: group-47
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-48
+  title: Template 48
+  description: An example template
+spec:
+  owner: group-48
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-49
+  title: Template 49
+  description: An example template
+spec:
+  owner: group-49
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-50
+  title: Template 50
+  description: An example template
+spec:
+  owner: group-50
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-51
+  title: Template 51
+  description: An example template
+spec:
+  owner: group-51
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-52
+  title: Template 52
+  description: An example template
+spec:
+  owner: group-52
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-53
+  title: Template 53
+  description: An example template
+spec:
+  owner: group-53
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-54
+  title: Template 54
+  description: An example template
+spec:
+  owner: group-54
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-55
+  title: Template 55
+  description: An example template
+spec:
+  owner: group-55
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-56
+  title: Template 56
+  description: An example template
+spec:
+  owner: group-56
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-57
+  title: Template 57
+  description: An example template
+spec:
+  owner: group-57
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-58
+  title: Template 58
+  description: An example template
+spec:
+  owner: group-58
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-59
+  title: Template 59
+  description: An example template
+spec:
+  owner: group-59
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-60
+  title: Template 60
+  description: An example template
+spec:
+  owner: group-60
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-61
+  title: Template 61
+  description: An example template
+spec:
+  owner: group-61
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-62
+  title: Template 62
+  description: An example template
+spec:
+  owner: group-62
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-63
+  title: Template 63
+  description: An example template
+spec:
+  owner: group-63
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-64
+  title: Template 64
+  description: An example template
+spec:
+  owner: group-64
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-65
+  title: Template 65
+  description: An example template
+spec:
+  owner: group-65
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-66
+  title: Template 66
+  description: An example template
+spec:
+  owner: group-66
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-67
+  title: Template 67
+  description: An example template
+spec:
+  owner: group-67
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-68
+  title: Template 68
+  description: An example template
+spec:
+  owner: group-68
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-69
+  title: Template 69
+  description: An example template
+spec:
+  owner: group-69
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-70
+  title: Template 70
+  description: An example template
+spec:
+  owner: group-70
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-71
+  title: Template 71
+  description: An example template
+spec:
+  owner: group-71
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-72
+  title: Template 72
+  description: An example template
+spec:
+  owner: group-72
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-73
+  title: Template 73
+  description: An example template
+spec:
+  owner: group-73
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-74
+  title: Template 74
+  description: An example template
+spec:
+  owner: group-74
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-75
+  title: Template 75
+  description: An example template
+spec:
+  owner: group-75
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-76
+  title: Template 76
+  description: An example template
+spec:
+  owner: group-76
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-77
+  title: Template 77
+  description: An example template
+spec:
+  owner: group-77
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-78
+  title: Template 78
+  description: An example template
+spec:
+  owner: group-78
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-79
+  title: Template 79
+  description: An example template
+spec:
+  owner: group-79
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-80
+  title: Template 80
+  description: An example template
+spec:
+  owner: group-80
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-81
+  title: Template 81
+  description: An example template
+spec:
+  owner: group-81
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-82
+  title: Template 82
+  description: An example template
+spec:
+  owner: group-82
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-83
+  title: Template 83
+  description: An example template
+spec:
+  owner: group-83
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-84
+  title: Template 84
+  description: An example template
+spec:
+  owner: group-84
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-85
+  title: Template 85
+  description: An example template
+spec:
+  owner: group-85
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-86
+  title: Template 86
+  description: An example template
+spec:
+  owner: group-86
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-87
+  title: Template 87
+  description: An example template
+spec:
+  owner: group-87
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-88
+  title: Template 88
+  description: An example template
+spec:
+  owner: group-88
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-89
+  title: Template 89
+  description: An example template
+spec:
+  owner: group-89
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-90
+  title: Template 90
+  description: An example template
+spec:
+  owner: group-90
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-91
+  title: Template 91
+  description: An example template
+spec:
+  owner: group-91
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-92
+  title: Template 92
+  description: An example template
+spec:
+  owner: group-92
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-93
+  title: Template 93
+  description: An example template
+spec:
+  owner: group-93
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-94
+  title: Template 94
+  description: An example template
+spec:
+  owner: group-94
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-95
+  title: Template 95
+  description: An example template
+spec:
+  owner: group-95
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-96
+  title: Template 96
+  description: An example template
+spec:
+  owner: group-96
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-97
+  title: Template 97
+  description: An example template
+spec:
+  owner: group-97
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-98
+  title: Template 98
+  description: An example template
+spec:
+  owner: group-98
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-99
+  title: Template 99
+  description: An example template
+spec:
+  owner: group-99
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-100
+  title: Template 100
+  description: An example template
+spec:
+  owner: group-100
+  type: service
+  parameters:
+    - title: Fill in some steps
+      required:
+        - message
+      properties:
+        message:
+          title: Message
+          type: string
+          description: A message to be displayed
+          ui:autofocus: true
+  steps:
+    - id: notify
+      name: Notify
+      action: notification:send
+      input:
+        recipients: entity
+        entityRefs:
+          - user:default/guest
+        title: ${{ parameters.message }}
+---
