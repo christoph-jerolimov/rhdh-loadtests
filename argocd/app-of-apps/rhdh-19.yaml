@@ -8,7 +8,7 @@ metadata:
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  # namespace: argocd or openshift-gitops
+  namespace: openshift-gitops
   name: rhdh-loadtests-19
 spec:
   project: rhdh-loadtests
