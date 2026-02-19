@@ -1,0 +1,33 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  # namespace: argocd or openshift-gitops
+  name: rhdh-loadtests
+spec:
+  description: rhdh-loadtests applications
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: '*'
+      server: '*'
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  namespace: openshift-gitops
+  name: rhdh-loadtests-app-of-apps
+spec:
+  project: rhdh-loadtests
+  source:
+    repoURL: 'https://github.com/christoph-jerolimov/rhdh-loadtests.git'
+    targetRevision: HEAD
+    path: argocd/apps
+  destination:
+    name: in-cluster
+    namespace: openshift-gitops
+  syncPolicy:
+    automated:
+      enabled: true

@@ -1,6 +1,10 @@
 ## Argo CD applications
 
-WIP
+Start an OpenShift cluster with OpenShift GitOps operator, then:
+
+```bash
+oc apply -f argocd/app-of-apps.yaml
+```
 
 ## Catalog entities
 
