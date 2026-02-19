@@ -1,0 +1,240 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: component-1
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+  tags:
+    - java
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: group-1
+  system: system-1
+  subcomponentOf:
+    - component-0
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: component-2
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+  tags:
+    - java
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: group-2
+  system: system-2
+  subcomponentOf:
+    - component-1
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: component-3
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+  tags:
+    - java
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: group-3
+  system: system-3
+  subcomponentOf:
+    - component-2
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: component-4
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+  tags:
+    - java
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: group-4
+  system: system-4
+  subcomponentOf:
+    - component-3
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: component-5
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+  tags:
+    - java
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: group-5
+  system: system-5
+  subcomponentOf:
+    - component-4
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: component-6
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+  tags:
+    - java
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: group-6
+  system: system-6
+  subcomponentOf:
+    - component-5
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: component-7
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+  tags:
+    - java
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: group-7
+  system: system-7
+  subcomponentOf:
+    - component-6
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: component-8
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+  tags:
+    - java
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: group-8
+  system: system-8
+  subcomponentOf:
+    - component-7
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: component-9
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+  tags:
+    - java
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: group-9
+  system: system-9
+  subcomponentOf:
+    - component-8
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: component-10
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+  tags:
+    - java
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: group-10
+  system: system-10
+  subcomponentOf:
+    - component-9
+---
