@@ -24,7 +24,7 @@ spec:
   source:
     repoURL: 'https://github.com/christoph-jerolimov/rhdh-loadtests.git'
     targetRevision: HEAD
-    path: argocd/apps
+    path: argocd/app-of-apps
   destination:
     name: in-cluster
     namespace: openshift-gitops
