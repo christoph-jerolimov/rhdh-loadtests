@@ -10,7 +10,6 @@ app:
     - nav-item:search: false
     - nav-item:user-settings: false
     - nav-item:catalog: false
-    - nav-item:scaffolder: false
 
     # Configure the catalog index page to be the root page, this is normally mounted on /catalog
     - page:catalog:
@@ -74,7 +73,7 @@ proxy:
 techdocs:
   builder: 'local' # Alternatives - 'external'
   generator:
-    runIn: 'docker' # Alternatives - 'local'
+    runIn: 'local' # Alternatives - 'local'
   publisher:
     type: 'local' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
 
@@ -110,15 +109,27 @@ catalog:
       rules:
         - allow: [User, Group]
 
-    ## Uncomment these lines to add more example data
-    # - type: url
-    #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
-
-    ## Uncomment these lines to add an example org
-    # - type: url
-    #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/acme-corp.yaml
-    #   rules:
-    #     - allow: [User, Group]
+    # Loadtest examples
+    - type: file
+      target: ../../../../catalog/components-1000.yaml
+      rules:
+        - allow: [Component]
+    - type: file
+      target: ../../../../catalog/groups-100.yaml
+      rules:
+        - allow: [Group]
+    - type: file
+      target: ../../../../catalog/systems-100.yaml
+      rules:
+        - allow: [System]
+    - type: file
+      target: ../../../../catalog/apis-100.yaml
+      rules:
+        - allow: [API]
+    - type: file
+      target: ../../../../catalog/templates-100.yaml
+      rules:
+        - allow: [Template]
 
 kubernetes:
   # see https://backstage.io/docs/features/kubernetes/configuration for kubernetes configuration options
