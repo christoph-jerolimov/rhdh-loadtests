@@ -27,8 +27,7 @@ spec:
   lifecycle: production
   owner: group-$i
   system: system-$i
-  subcomponentOf:
-    - component-$((i - 1))
+  subcomponentOf: component-$((i - 1))
 ---
 EOF
     done

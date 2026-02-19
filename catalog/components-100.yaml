@@ -19,8 +19,7 @@ spec:
   lifecycle: production
   owner: group-1
   system: system-1
-  subcomponentOf:
-    - component-0
+  subcomponentOf: component-0
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -43,8 +42,7 @@ spec:
   lifecycle: production
   owner: group-2
   system: system-2
-  subcomponentOf:
-    - component-1
+  subcomponentOf: component-1
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -67,8 +65,7 @@ spec:
   lifecycle: production
   owner: group-3
   system: system-3
-  subcomponentOf:
-    - component-2
+  subcomponentOf: component-2
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -91,8 +88,7 @@ spec:
   lifecycle: production
   owner: group-4
   system: system-4
-  subcomponentOf:
-    - component-3
+  subcomponentOf: component-3
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -115,8 +111,7 @@ spec:
   lifecycle: production
   owner: group-5
   system: system-5
-  subcomponentOf:
-    - component-4
+  subcomponentOf: component-4
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -139,8 +134,7 @@ spec:
   lifecycle: production
   owner: group-6
   system: system-6
-  subcomponentOf:
-    - component-5
+  subcomponentOf: component-5
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -163,8 +157,7 @@ spec:
   lifecycle: production
   owner: group-7
   system: system-7
-  subcomponentOf:
-    - component-6
+  subcomponentOf: component-6
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -187,8 +180,7 @@ spec:
   lifecycle: production
   owner: group-8
   system: system-8
-  subcomponentOf:
-    - component-7
+  subcomponentOf: component-7
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -211,8 +203,7 @@ spec:
   lifecycle: production
   owner: group-9
   system: system-9
-  subcomponentOf:
-    - component-8
+  subcomponentOf: component-8
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -235,8 +226,7 @@ spec:
   lifecycle: production
   owner: group-10
   system: system-10
-  subcomponentOf:
-    - component-9
+  subcomponentOf: component-9
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -259,8 +249,7 @@ spec:
   lifecycle: production
   owner: group-11
   system: system-11
-  subcomponentOf:
-    - component-10
+  subcomponentOf: component-10
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -283,8 +272,7 @@ spec:
   lifecycle: production
   owner: group-12
   system: system-12
-  subcomponentOf:
-    - component-11
+  subcomponentOf: component-11
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -307,8 +295,7 @@ spec:
   lifecycle: production
   owner: group-13
   system: system-13
-  subcomponentOf:
-    - component-12
+  subcomponentOf: component-12
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -331,8 +318,7 @@ spec:
   lifecycle: production
   owner: group-14
   system: system-14
-  subcomponentOf:
-    - component-13
+  subcomponentOf: component-13
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -355,8 +341,7 @@ spec:
   lifecycle: production
   owner: group-15
   system: system-15
-  subcomponentOf:
-    - component-14
+  subcomponentOf: component-14
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -379,8 +364,7 @@ spec:
   lifecycle: production
   owner: group-16
   system: system-16
-  subcomponentOf:
-    - component-15
+  subcomponentOf: component-15
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -403,8 +387,7 @@ spec:
   lifecycle: production
   owner: group-17
   system: system-17
-  subcomponentOf:
-    - component-16
+  subcomponentOf: component-16
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -427,8 +410,7 @@ spec:
   lifecycle: production
   owner: group-18
   system: system-18
-  subcomponentOf:
-    - component-17
+  subcomponentOf: component-17
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -451,8 +433,7 @@ spec:
   lifecycle: production
   owner: group-19
   system: system-19
-  subcomponentOf:
-    - component-18
+  subcomponentOf: component-18
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -475,8 +456,7 @@ spec:
   lifecycle: production
   owner: group-20
   system: system-20
-  subcomponentOf:
-    - component-19
+  subcomponentOf: component-19
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -499,8 +479,7 @@ spec:
   lifecycle: production
   owner: group-21
   system: system-21
-  subcomponentOf:
-    - component-20
+  subcomponentOf: component-20
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -523,8 +502,7 @@ spec:
   lifecycle: production
   owner: group-22
   system: system-22
-  subcomponentOf:
-    - component-21
+  subcomponentOf: component-21
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -547,8 +525,7 @@ spec:
   lifecycle: production
   owner: group-23
   system: system-23
-  subcomponentOf:
-    - component-22
+  subcomponentOf: component-22
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -571,8 +548,7 @@ spec:
   lifecycle: production
   owner: group-24
   system: system-24
-  subcomponentOf:
-    - component-23
+  subcomponentOf: component-23
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -595,8 +571,7 @@ spec:
   lifecycle: production
   owner: group-25
   system: system-25
-  subcomponentOf:
-    - component-24
+  subcomponentOf: component-24
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -619,8 +594,7 @@ spec:
   lifecycle: production
   owner: group-26
   system: system-26
-  subcomponentOf:
-    - component-25
+  subcomponentOf: component-25
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -643,8 +617,7 @@ spec:
   lifecycle: production
   owner: group-27
   system: system-27
-  subcomponentOf:
-    - component-26
+  subcomponentOf: component-26
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -667,8 +640,7 @@ spec:
   lifecycle: production
   owner: group-28
   system: system-28
-  subcomponentOf:
-    - component-27
+  subcomponentOf: component-27
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -691,8 +663,7 @@ spec:
   lifecycle: production
   owner: group-29
   system: system-29
-  subcomponentOf:
-    - component-28
+  subcomponentOf: component-28
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -715,8 +686,7 @@ spec:
   lifecycle: production
   owner: group-30
   system: system-30
-  subcomponentOf:
-    - component-29
+  subcomponentOf: component-29
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -739,8 +709,7 @@ spec:
   lifecycle: production
   owner: group-31
   system: system-31
-  subcomponentOf:
-    - component-30
+  subcomponentOf: component-30
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -763,8 +732,7 @@ spec:
   lifecycle: production
   owner: group-32
   system: system-32
-  subcomponentOf:
-    - component-31
+  subcomponentOf: component-31
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -787,8 +755,7 @@ spec:
   lifecycle: production
   owner: group-33
   system: system-33
-  subcomponentOf:
-    - component-32
+  subcomponentOf: component-32
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -811,8 +778,7 @@ spec:
   lifecycle: production
   owner: group-34
   system: system-34
-  subcomponentOf:
-    - component-33
+  subcomponentOf: component-33
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -835,8 +801,7 @@ spec:
   lifecycle: production
   owner: group-35
   system: system-35
-  subcomponentOf:
-    - component-34
+  subcomponentOf: component-34
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -859,8 +824,7 @@ spec:
   lifecycle: production
   owner: group-36
   system: system-36
-  subcomponentOf:
-    - component-35
+  subcomponentOf: component-35
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -883,8 +847,7 @@ spec:
   lifecycle: production
   owner: group-37
   system: system-37
-  subcomponentOf:
-    - component-36
+  subcomponentOf: component-36
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -907,8 +870,7 @@ spec:
   lifecycle: production
   owner: group-38
   system: system-38
-  subcomponentOf:
-    - component-37
+  subcomponentOf: component-37
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -931,8 +893,7 @@ spec:
   lifecycle: production
   owner: group-39
   system: system-39
-  subcomponentOf:
-    - component-38
+  subcomponentOf: component-38
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -955,8 +916,7 @@ spec:
   lifecycle: production
   owner: group-40
   system: system-40
-  subcomponentOf:
-    - component-39
+  subcomponentOf: component-39
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -979,8 +939,7 @@ spec:
   lifecycle: production
   owner: group-41
   system: system-41
-  subcomponentOf:
-    - component-40
+  subcomponentOf: component-40
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1003,8 +962,7 @@ spec:
   lifecycle: production
   owner: group-42
   system: system-42
-  subcomponentOf:
-    - component-41
+  subcomponentOf: component-41
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1027,8 +985,7 @@ spec:
   lifecycle: production
   owner: group-43
   system: system-43
-  subcomponentOf:
-    - component-42
+  subcomponentOf: component-42
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1051,8 +1008,7 @@ spec:
   lifecycle: production
   owner: group-44
   system: system-44
-  subcomponentOf:
-    - component-43
+  subcomponentOf: component-43
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1075,8 +1031,7 @@ spec:
   lifecycle: production
   owner: group-45
   system: system-45
-  subcomponentOf:
-    - component-44
+  subcomponentOf: component-44
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1099,8 +1054,7 @@ spec:
   lifecycle: production
   owner: group-46
   system: system-46
-  subcomponentOf:
-    - component-45
+  subcomponentOf: component-45
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1123,8 +1077,7 @@ spec:
   lifecycle: production
   owner: group-47
   system: system-47
-  subcomponentOf:
-    - component-46
+  subcomponentOf: component-46
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1147,8 +1100,7 @@ spec:
   lifecycle: production
   owner: group-48
   system: system-48
-  subcomponentOf:
-    - component-47
+  subcomponentOf: component-47
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1171,8 +1123,7 @@ spec:
   lifecycle: production
   owner: group-49
   system: system-49
-  subcomponentOf:
-    - component-48
+  subcomponentOf: component-48
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1195,8 +1146,7 @@ spec:
   lifecycle: production
   owner: group-50
   system: system-50
-  subcomponentOf:
-    - component-49
+  subcomponentOf: component-49
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1219,8 +1169,7 @@ spec:
   lifecycle: production
   owner: group-51
   system: system-51
-  subcomponentOf:
-    - component-50
+  subcomponentOf: component-50
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1243,8 +1192,7 @@ spec:
   lifecycle: production
   owner: group-52
   system: system-52
-  subcomponentOf:
-    - component-51
+  subcomponentOf: component-51
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1267,8 +1215,7 @@ spec:
   lifecycle: production
   owner: group-53
   system: system-53
-  subcomponentOf:
-    - component-52
+  subcomponentOf: component-52
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1291,8 +1238,7 @@ spec:
   lifecycle: production
   owner: group-54
   system: system-54
-  subcomponentOf:
-    - component-53
+  subcomponentOf: component-53
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1315,8 +1261,7 @@ spec:
   lifecycle: production
   owner: group-55
   system: system-55
-  subcomponentOf:
-    - component-54
+  subcomponentOf: component-54
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1339,8 +1284,7 @@ spec:
   lifecycle: production
   owner: group-56
   system: system-56
-  subcomponentOf:
-    - component-55
+  subcomponentOf: component-55
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1363,8 +1307,7 @@ spec:
   lifecycle: production
   owner: group-57
   system: system-57
-  subcomponentOf:
-    - component-56
+  subcomponentOf: component-56
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1387,8 +1330,7 @@ spec:
   lifecycle: production
   owner: group-58
   system: system-58
-  subcomponentOf:
-    - component-57
+  subcomponentOf: component-57
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1411,8 +1353,7 @@ spec:
   lifecycle: production
   owner: group-59
   system: system-59
-  subcomponentOf:
-    - component-58
+  subcomponentOf: component-58
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1435,8 +1376,7 @@ spec:
   lifecycle: production
   owner: group-60
   system: system-60
-  subcomponentOf:
-    - component-59
+  subcomponentOf: component-59
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1459,8 +1399,7 @@ spec:
   lifecycle: production
   owner: group-61
   system: system-61
-  subcomponentOf:
-    - component-60
+  subcomponentOf: component-60
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1483,8 +1422,7 @@ spec:
   lifecycle: production
   owner: group-62
   system: system-62
-  subcomponentOf:
-    - component-61
+  subcomponentOf: component-61
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1507,8 +1445,7 @@ spec:
   lifecycle: production
   owner: group-63
   system: system-63
-  subcomponentOf:
-    - component-62
+  subcomponentOf: component-62
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1531,8 +1468,7 @@ spec:
   lifecycle: production
   owner: group-64
   system: system-64
-  subcomponentOf:
-    - component-63
+  subcomponentOf: component-63
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1555,8 +1491,7 @@ spec:
   lifecycle: production
   owner: group-65
   system: system-65
-  subcomponentOf:
-    - component-64
+  subcomponentOf: component-64
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1579,8 +1514,7 @@ spec:
   lifecycle: production
   owner: group-66
   system: system-66
-  subcomponentOf:
-    - component-65
+  subcomponentOf: component-65
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1603,8 +1537,7 @@ spec:
   lifecycle: production
   owner: group-67
   system: system-67
-  subcomponentOf:
-    - component-66
+  subcomponentOf: component-66
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1627,8 +1560,7 @@ spec:
   lifecycle: production
   owner: group-68
   system: system-68
-  subcomponentOf:
-    - component-67
+  subcomponentOf: component-67
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1651,8 +1583,7 @@ spec:
   lifecycle: production
   owner: group-69
   system: system-69
-  subcomponentOf:
-    - component-68
+  subcomponentOf: component-68
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1675,8 +1606,7 @@ spec:
   lifecycle: production
   owner: group-70
   system: system-70
-  subcomponentOf:
-    - component-69
+  subcomponentOf: component-69
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1699,8 +1629,7 @@ spec:
   lifecycle: production
   owner: group-71
   system: system-71
-  subcomponentOf:
-    - component-70
+  subcomponentOf: component-70
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1723,8 +1652,7 @@ spec:
   lifecycle: production
   owner: group-72
   system: system-72
-  subcomponentOf:
-    - component-71
+  subcomponentOf: component-71
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1747,8 +1675,7 @@ spec:
   lifecycle: production
   owner: group-73
   system: system-73
-  subcomponentOf:
-    - component-72
+  subcomponentOf: component-72
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1771,8 +1698,7 @@ spec:
   lifecycle: production
   owner: group-74
   system: system-74
-  subcomponentOf:
-    - component-73
+  subcomponentOf: component-73
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1795,8 +1721,7 @@ spec:
   lifecycle: production
   owner: group-75
   system: system-75
-  subcomponentOf:
-    - component-74
+  subcomponentOf: component-74
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1819,8 +1744,7 @@ spec:
   lifecycle: production
   owner: group-76
   system: system-76
-  subcomponentOf:
-    - component-75
+  subcomponentOf: component-75
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1843,8 +1767,7 @@ spec:
   lifecycle: production
   owner: group-77
   system: system-77
-  subcomponentOf:
-    - component-76
+  subcomponentOf: component-76
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1867,8 +1790,7 @@ spec:
   lifecycle: production
   owner: group-78
   system: system-78
-  subcomponentOf:
-    - component-77
+  subcomponentOf: component-77
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1891,8 +1813,7 @@ spec:
   lifecycle: production
   owner: group-79
   system: system-79
-  subcomponentOf:
-    - component-78
+  subcomponentOf: component-78
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1915,8 +1836,7 @@ spec:
   lifecycle: production
   owner: group-80
   system: system-80
-  subcomponentOf:
-    - component-79
+  subcomponentOf: component-79
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1939,8 +1859,7 @@ spec:
   lifecycle: production
   owner: group-81
   system: system-81
-  subcomponentOf:
-    - component-80
+  subcomponentOf: component-80
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1963,8 +1882,7 @@ spec:
   lifecycle: production
   owner: group-82
   system: system-82
-  subcomponentOf:
-    - component-81
+  subcomponentOf: component-81
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -1987,8 +1905,7 @@ spec:
   lifecycle: production
   owner: group-83
   system: system-83
-  subcomponentOf:
-    - component-82
+  subcomponentOf: component-82
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2011,8 +1928,7 @@ spec:
   lifecycle: production
   owner: group-84
   system: system-84
-  subcomponentOf:
-    - component-83
+  subcomponentOf: component-83
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2035,8 +1951,7 @@ spec:
   lifecycle: production
   owner: group-85
   system: system-85
-  subcomponentOf:
-    - component-84
+  subcomponentOf: component-84
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2059,8 +1974,7 @@ spec:
   lifecycle: production
   owner: group-86
   system: system-86
-  subcomponentOf:
-    - component-85
+  subcomponentOf: component-85
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2083,8 +1997,7 @@ spec:
   lifecycle: production
   owner: group-87
   system: system-87
-  subcomponentOf:
-    - component-86
+  subcomponentOf: component-86
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2107,8 +2020,7 @@ spec:
   lifecycle: production
   owner: group-88
   system: system-88
-  subcomponentOf:
-    - component-87
+  subcomponentOf: component-87
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2131,8 +2043,7 @@ spec:
   lifecycle: production
   owner: group-89
   system: system-89
-  subcomponentOf:
-    - component-88
+  subcomponentOf: component-88
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2155,8 +2066,7 @@ spec:
   lifecycle: production
   owner: group-90
   system: system-90
-  subcomponentOf:
-    - component-89
+  subcomponentOf: component-89
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2179,8 +2089,7 @@ spec:
   lifecycle: production
   owner: group-91
   system: system-91
-  subcomponentOf:
-    - component-90
+  subcomponentOf: component-90
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2203,8 +2112,7 @@ spec:
   lifecycle: production
   owner: group-92
   system: system-92
-  subcomponentOf:
-    - component-91
+  subcomponentOf: component-91
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2227,8 +2135,7 @@ spec:
   lifecycle: production
   owner: group-93
   system: system-93
-  subcomponentOf:
-    - component-92
+  subcomponentOf: component-92
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2251,8 +2158,7 @@ spec:
   lifecycle: production
   owner: group-94
   system: system-94
-  subcomponentOf:
-    - component-93
+  subcomponentOf: component-93
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2275,8 +2181,7 @@ spec:
   lifecycle: production
   owner: group-95
   system: system-95
-  subcomponentOf:
-    - component-94
+  subcomponentOf: component-94
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2299,8 +2204,7 @@ spec:
   lifecycle: production
   owner: group-96
   system: system-96
-  subcomponentOf:
-    - component-95
+  subcomponentOf: component-95
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2323,8 +2227,7 @@ spec:
   lifecycle: production
   owner: group-97
   system: system-97
-  subcomponentOf:
-    - component-96
+  subcomponentOf: component-96
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2347,8 +2250,7 @@ spec:
   lifecycle: production
   owner: group-98
   system: system-98
-  subcomponentOf:
-    - component-97
+  subcomponentOf: component-97
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2371,8 +2273,7 @@ spec:
   lifecycle: production
   owner: group-99
   system: system-99
-  subcomponentOf:
-    - component-98
+  subcomponentOf: component-98
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -2395,6 +2296,5 @@ spec:
   lifecycle: production
   owner: group-100
   system: system-100
-  subcomponentOf:
-    - component-99
+  subcomponentOf: component-99
 ---

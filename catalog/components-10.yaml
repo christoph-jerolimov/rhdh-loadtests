@@ -19,8 +19,7 @@ spec:
   lifecycle: production
   owner: group-1
   system: system-1
-  subcomponentOf:
-    - component-0
+  subcomponentOf: component-0
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -43,8 +42,7 @@ spec:
   lifecycle: production
   owner: group-2
   system: system-2
-  subcomponentOf:
-    - component-1
+  subcomponentOf: component-1
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -67,8 +65,7 @@ spec:
   lifecycle: production
   owner: group-3
   system: system-3
-  subcomponentOf:
-    - component-2
+  subcomponentOf: component-2
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -91,8 +88,7 @@ spec:
   lifecycle: production
   owner: group-4
   system: system-4
-  subcomponentOf:
-    - component-3
+  subcomponentOf: component-3
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -115,8 +111,7 @@ spec:
   lifecycle: production
   owner: group-5
   system: system-5
-  subcomponentOf:
-    - component-4
+  subcomponentOf: component-4
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -139,8 +134,7 @@ spec:
   lifecycle: production
   owner: group-6
   system: system-6
-  subcomponentOf:
-    - component-5
+  subcomponentOf: component-5
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -163,8 +157,7 @@ spec:
   lifecycle: production
   owner: group-7
   system: system-7
-  subcomponentOf:
-    - component-6
+  subcomponentOf: component-6
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -187,8 +180,7 @@ spec:
   lifecycle: production
   owner: group-8
   system: system-8
-  subcomponentOf:
-    - component-7
+  subcomponentOf: component-7
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -211,8 +203,7 @@ spec:
   lifecycle: production
   owner: group-9
   system: system-9
-  subcomponentOf:
-    - component-8
+  subcomponentOf: component-8
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -235,6 +226,5 @@ spec:
   lifecycle: production
   owner: group-10
   system: system-10
-  subcomponentOf:
-    - component-9
+  subcomponentOf: component-9
 ---
