@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  namespace: openshift-gitops
+  name: rhdh-loadtests
+spec:
+  description: rhdh-loadtests applications
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: 'rhdh-loadtests-*'
+      server: '*'
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'

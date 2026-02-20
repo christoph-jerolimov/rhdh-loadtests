@@ -26,6 +26,9 @@ global:
       - package: ./dynamic-plugins/dist/backstage-community-plugin-quay
         disabled: false
 
+route:
+  enabled: false
+
 upstream:
   backstage:
     appConfig:

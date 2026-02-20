@@ -5,24 +5,28 @@ Start an OpenShift cluster with OpenShift GitOps operator.
 To create all test apps (currently 4) run:
 
 ```bash
+oc apply -f argocd/app-project.yaml
 oc apply -f argocd/app-of-apps.yaml
 ```
 
 or, without cloning:
 
 ```bash
+oc apply -f https://raw.githubusercontent.com/christoph-jerolimov/rhdh-loadtests/refs/heads/main/argocd/app-project.yaml
 oc apply -f https://raw.githubusercontent.com/christoph-jerolimov/rhdh-loadtests/refs/heads/main/argocd/app-of-apps.yaml
 ```
 
 Or apply just a single application (current available: `rhdh-17`, `rhdh-18`, `rhdh-19`, and `rhdh-next`):
 
 ```bash
+oc apply -f argocd/app-project.yaml
 oc apply -f argocd/app-of-apps/rhdh-19.yaml
 ```
 
 or, without cloning:
 
 ```bash
+oc apply -f https://raw.githubusercontent.com/christoph-jerolimov/rhdh-loadtests/refs/heads/main/argocd/app-project.yaml
 oc apply -f https://raw.githubusercontent.com/christoph-jerolimov/rhdh-loadtests/refs/heads/main/argocd/app-of-apps/rhdh-19.yaml
 ```
 
