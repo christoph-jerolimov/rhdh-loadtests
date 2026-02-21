@@ -12,13 +12,16 @@ metadata:
   name: rhdh-loadtests-18
 spec:
   project: rhdh-loadtests
-  source:
-    chart: redhat-developer-hub
-    repoURL: https://charts.openshift.io
-    targetRevision: '1.8.0'
-    helm:
-      valueFiles:
-      - values.yaml
+  sources:
+    - chart: redhat-developer-hub
+      repoURL: https://charts.openshift.io
+      targetRevision: '1.8.0'
+      helm:
+        valueFiles:
+          - values.yaml
+    - repoURL: 'https://github.com/christoph-jerolimov/rhdh-loadtests.git'
+      targetRevision: HEAD
+      path: argocd/rhdh-18
   destination:
     name: in-cluster
     namespace: rhdh-loadtests-18
