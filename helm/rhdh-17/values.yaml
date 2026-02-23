@@ -8,85 +8,86 @@ global:
       - package: ./dynamic-plugins/dist/red-hat-developer-hub-backstage-plugin-bulk-import-backend-dynamic
         disabled: false
 
-route:
-  enabled: false
+redhat-developer-hub:
+  route:
+    enabled: false
 
-upstream:
-  backstage:
-    appConfig:
-      app:
-        title: RHDH 1.7 loadtest
+  upstream:
+    backstage:
+      appConfig:
+        app:
+          title: RHDH 1.7 loadtest
 
-      catalog:
-        locations:
-          - type: url
-            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/guest-login.yaml
-            rules:
-              - allow: [User, Group]
-          - type: url
-            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/components-1000.yaml
-            rules:
-              - allow: [Component]
-          - type: url
-            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/groups-100.yaml
-            rules:
-              - allow: [Group]
-          - type: url
-            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/systems-100.yaml
-            rules:
-              - allow: [System]
-          - type: url
-            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/apis-100.yaml
-            rules:
-              - allow: [API]
-          - type: url
-            target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/templates-100.yaml
-            rules:
-              - allow: [Template]
+        catalog:
+          locations:
+            - type: url
+              target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/guest-login.yaml
+              rules:
+                - allow: [User, Group]
+            - type: url
+              target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/components-1000.yaml
+              rules:
+                - allow: [Component]
+            - type: url
+              target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/groups-100.yaml
+              rules:
+                - allow: [Group]
+            - type: url
+              target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/systems-100.yaml
+              rules:
+                - allow: [System]
+            - type: url
+              target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/apis-100.yaml
+              rules:
+                - allow: [API]
+            - type: url
+              target: https://github.com/christoph-jerolimov/rhdh-loadtests/blob/main/catalog/templates-100.yaml
+              rules:
+                - allow: [Template]
 
-      dynamicPlugins:
-        frontend:
-          # default.main-menu-items:
-          #   menuItems:
-          #     default.home:
-          #       title: Home (changed)
+        dynamicPlugins:
+          frontend:
+            # default.main-menu-items:
+            #   menuItems:
+            #     default.home:
+            #       title: Home (changed)
 
-      permission:
-        enabled: true
-        rbac:
-          pluginsWithPermission:
-            - catalog
-            - permission
-            - scaffolder
-          # policyFileReload: true
-          # policies-csv-file: ./rbac/rbac-policies.csv
-          # conditionalPoliciesFile: ./rbac-conditions/rbac-conditional-policies.yaml
-          admin:
-            superUsers:
-              - name: user:default/christoph-jerolimov
-            users:
-              - name: user:default/rhdh-qe
+        permission:
+          enabled: true
+          rbac:
+            pluginsWithPermission:
+              - catalog
+              - permission
+              - scaffolder
+            # policyFileReload: true
+            # policies-csv-file: ./rbac/rbac-policies.csv
+            # conditionalPoliciesFile: ./rbac-conditions/rbac-conditional-policies.yaml
+            admin:
+              superUsers:
+                - name: user:default/christoph-jerolimov
+              users:
+                - name: user:default/rhdh-qe
 
-    extraEnvVars:
-      # defaults
-      - name: BACKEND_SECRET
-        valueFrom:
-          secretKeyRef:
-            key: backend-secret
-            name: '{{ include "janus-idp.backend-secret-name" $ }}'
-      - name: POSTGRESQL_ADMIN_PASSWORD
-        valueFrom:
-          secretKeyRef:
-            key: postgres-password
-            name: '{{- include "janus-idp.postgresql.secretName" . }}'
-      # load route host (app and backend baseUrl)
-      - name: APP_CONFIG_app_baseUrl
-        valueFrom:
-          configMapKeyRef:
-            name: rhdh-route-configmap
-            key: APP_CONFIG_app_baseUrl
-      - name: APP_CONFIG_backend_baseUrl
-        valueFrom:
-          configMapKeyRef:
-            name: rhdh-route-configmap
-            key: APP_CONFIG_backend_baseUrl
+      extraEnvVars:
+        # defaults
+        - name: BACKEND_SECRET
+          valueFrom:
+            secretKeyRef:
+              key: backend-secret
+              name: '{{ include "janus-idp.backend-secret-name" $ }}'
+        - name: POSTGRESQL_ADMIN_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: postgres-password
+              name: '{{- include "janus-idp.postgresql.secretName" . }}'
+        # load route host (app and backend baseUrl)
+        - name: APP_CONFIG_app_baseUrl
+          valueFrom:
+            configMapKeyRef:
+              name: rhdh-route-configmap
+              key: APP_CONFIG_app_baseUrl
+        - name: APP_CONFIG_backend_baseUrl
+          valueFrom:
+            configMapKeyRef:
+              name: rhdh-route-configmap
+              key: APP_CONFIG_backend_baseUrl

@@ -59,7 +59,7 @@ spec:
             - -c
             - |
               # Get the route host
-              HOST=$(kubectl get route rhdh -o jsonpath='{.spec.host}')
+              HOST=$(kubectl get route {{ printf "%s-developer-hub" .Release.Name }} -o jsonpath='{.spec.host}')
               
               if [ -z "$HOST" ]; then
                 echo "Error: Could not retrieve route host"
