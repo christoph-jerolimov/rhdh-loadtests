@@ -1,0 +1,12 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: rhdh
+  labels:
+    app.kubernetes.io/component: backstage
+    app.kubernetes.io/instance: rhdh-loadtests-17
+    app.kubernetes.io/name: developer-hub
+spec:
+  to:
+    kind: Service
+    name: {{ printf "%s-developer-hub" .Release.Name }}
