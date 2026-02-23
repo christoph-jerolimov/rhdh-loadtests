@@ -13,6 +13,9 @@ global:
       - package: ./dynamic-plugins/dist/red-hat-developer-hub-backstage-plugin-bulk-import-backend-dynamic
         disabled: false
 
+route:
+  enabled: false
+
 upstream:
   backstage:
     image:
