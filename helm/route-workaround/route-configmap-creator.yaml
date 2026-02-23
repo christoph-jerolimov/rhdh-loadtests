@@ -75,11 +75,8 @@ spec:
               metadata:
                 name: rhdh-route-configmap
               data:
-                app-config-route.yaml: |
-                  app:
-                    baseUrl: https://$HOST
-                  backend:
-                    baseUrl: https://$HOST
+                APP_CONFIG_app_baseUrl: https://$HOST
+                APP_CONFIG_backend_baseUrl: https://$HOST
               EOF
               
               echo "ConfigMap created/updated successfully"

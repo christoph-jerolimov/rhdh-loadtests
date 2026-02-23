@@ -84,3 +84,27 @@ upstream:
               - name: user:default/christoph-jerolimov
             users:
               - name: user:default/rhdh-qe
+
+    extraEnvVars:
+      # defaults
+      - name: BACKEND_SECRET
+        valueFrom:
+          secretKeyRef:
+            key: backend-secret
+            name: '{{ include "janus-idp.backend-secret-name" $ }}'
+      - name: POSTGRESQL_ADMIN_PASSWORD
+        valueFrom:
+          secretKeyRef:
+            key: postgres-password
+            name: '{{- include "janus-idp.postgresql.secretName" . }}'
+      # load route host (app and backend baseUrl)
+      - name: APP_CONFIG_app_baseUrl
+        valueFrom:
+          configMapKeyRef:
+            name: rhdh-route-configmap
+            key: APP_CONFIG_app_baseUrl
+      - name: APP_CONFIG_backend_baseUrl
+        valueFrom:
+          configMapKeyRef:
+            name: rhdh-route-configmap
+            key: APP_CONFIG_backend_baseUrl

@@ -1,4 +1,22 @@
-## Argo CD applications
+## Create instances with Helm
+
+```
+helm upgrade --install rhdh-17-loadtests helm/rhdh-17 --create-namespace --namespace rhdh-17-loadtests
+```
+
+```
+helm upgrade --install rhdh-18-loadtests helm/rhdh-18 --create-namespace --namespace rhdh-18-loadtests
+```
+
+```
+helm upgrade --install rhdh-19-loadtests helm/rhdh-19 --create-namespace --namespace rhdh-19-loadtests
+```
+
+```
+helm upgrade --install rhdh-next-loadtests helm/rhdh-next --create-namespace --namespace rhdh-next-loadtests
+```
+
+## Create instances with Argo CD
 
 Start an OpenShift cluster with OpenShift GitOps operator.
 

@@ -1,0 +1,6 @@
+dependencies:
+- name: redhat-developer-hub
+  repository: oci://quay.io/rhdh
+  version: 1.10-74-CI
+digest: sha256:21e37bda59ad50fb0b16e86b894fc93c83b3fe40f0751cb31543241367ecc780
+generated: "2026-02-22T21:49:51.221251563+01:00"
