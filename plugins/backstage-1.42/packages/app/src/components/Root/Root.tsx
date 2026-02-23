@@ -79,7 +79,7 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
         {/* End global nav */}
         <SidebarDivider />
         <SidebarScrollWrapper>
-          {/* Items in this group will be scrollable if they run out of space */}
+          <SidebarItem icon={ExtensionIcon} to="page-n" text="Page n" />
         </SidebarScrollWrapper>
       </SidebarGroup>
       <SidebarSpace />

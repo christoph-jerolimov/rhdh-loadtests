@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Create apis
 function apis() {
     local n=$1

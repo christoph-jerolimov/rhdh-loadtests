@@ -58,6 +58,8 @@ import {
   isKubernetesAvailable,
 } from '@backstage/plugin-kubernetes';
 
+import { EntityCatalogCardN } from '@internal/plugin-catalog-tab-n';
+
 const techdocsContent = (
   <EntityTechdocsContent>
     <TechDocsAddons>
@@ -186,6 +188,10 @@ const serviceEntityPage = (
     <EntityLayout.Route path="/docs" title="Docs">
       {techdocsContent}
     </EntityLayout.Route>
+
+    <EntityLayout.Route path="/catalog-tab-n" title="Catalog Tab N">
+      <EntityCatalogCardN />
+    </EntityLayout.Route>
   </EntityLayout>
 );
 
@@ -221,6 +227,10 @@ const websiteEntityPage = (
     <EntityLayout.Route path="/docs" title="Docs">
       {techdocsContent}
     </EntityLayout.Route>
+
+    <EntityLayout.Route path="/catalog-tab-n" title="Catalog Tab N">
+      <EntityCatalogCardN />
+    </EntityLayout.Route>
   </EntityLayout>
 );
 
@@ -239,6 +249,10 @@ const defaultEntityPage = (
 
     <EntityLayout.Route path="/docs" title="Docs">
       {techdocsContent}
+    </EntityLayout.Route>
+
+    <EntityLayout.Route path="/catalog-tab-n" title="Catalog Tab N">
+      <EntityCatalogCardN />
     </EntityLayout.Route>
   </EntityLayout>
 );
@@ -326,6 +340,10 @@ const groupPage = (
           <EntityLinksCard />
         </Grid>
       </Grid>
+    </EntityLayout.Route>
+
+    <EntityLayout.Route path="/catalog-tab-n" title="Catalog Tab N">
+      <EntityCatalogCardN />
     </EntityLayout.Route>
   </EntityLayout>
 );

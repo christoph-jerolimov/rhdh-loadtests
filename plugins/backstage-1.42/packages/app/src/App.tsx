@@ -38,6 +38,8 @@ import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/
 import { NotificationsPage } from '@backstage/plugin-notifications';
 import { SignalsDisplay } from '@backstage/plugin-signals';
 
+import { PageNPage } from '@internal/plugin-page-n';
+
 const app = createApp({
   apis,
   bindRoutes({ bind }) {
@@ -97,6 +99,7 @@ const routes = (
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/catalog-graph" element={<CatalogGraphPage />} />
     <Route path="/notifications" element={<NotificationsPage />} />
+    <Route path="/page-n" element={<PageNPage />} />
   </FlatRoutes>
 );
 
