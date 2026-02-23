@@ -12,18 +12,6 @@ global:
         disabled: false
       - package: ./dynamic-plugins/dist/red-hat-developer-hub-backstage-plugin-bulk-import-backend-dynamic
         disabled: false
-      - package: ./dynamic-plugins/dist/backstage-community-plugin-tech-radar
-        disabled: false
-      - package: ./dynamic-plugins/dist/backstage-plugin-kubernetes
-        disabled: false
-      - package: ./dynamic-plugins/dist/backstage-plugin-kubernetes-backend-dynamic
-        disabled: false
-      - package: ./dynamic-plugins/dist/backstage-community-plugin-tekton
-        disabled: false
-      - package: ./dynamic-plugins/dist/backstage-community-plugin-topology
-        disabled: false
-      - package: ./dynamic-plugins/dist/backstage-community-plugin-acr
-        disabled: false
 
 upstream:
   backstage:

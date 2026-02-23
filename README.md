@@ -1,19 +1,17 @@
+# Some [RHDH](https://developers.redhat.com/rhdh) loadtest experiments 🧪
+
 ## Create instances with Helm
 
-```
-helm upgrade --install rhdh-17-loadtests helm/rhdh-17 --create-namespace --namespace rhdh-17-loadtests
-```
+To create all test instances at once (`rhdh-17`, `rhdh-18`, `rhdh-19` and `rhdh-next`) run
 
 ```
-helm upgrade --install rhdh-18-loadtests helm/rhdh-18 --create-namespace --namespace rhdh-18-loadtests
+make install-all
 ```
 
-```
-helm upgrade --install rhdh-19-loadtests helm/rhdh-19 --create-namespace --namespace rhdh-19-loadtests
-```
+or for just one version use:
 
 ```
-helm upgrade --install rhdh-next-loadtests helm/rhdh-next --create-namespace --namespace rhdh-next-loadtests
+cd helm/rhdh-17 && make install 
 ```
 
 ## Create instances with Argo CD
