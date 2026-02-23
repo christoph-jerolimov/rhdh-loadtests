@@ -7,6 +7,10 @@ global:
         disabled: false
       - package: ./dynamic-plugins/dist/red-hat-developer-hub-backstage-plugin-bulk-import-backend-dynamic
         disabled: false
+      - package: oci://quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.42_page-n!internal-plugin-page-n
+        disabled: false
+      - package: oci://quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.42_catalog-tab-n!internal-plugin-catalog-tab-n
+        disabled: false
 
 redhat-developer-hub:
   route:
@@ -45,13 +49,6 @@ redhat-developer-hub:
               rules:
                 - allow: [Template]
 
-        dynamicPlugins:
-          frontend:
-            # default.main-menu-items:
-            #   menuItems:
-            #     default.home:
-            #       title: Home (changed)
-
         permission:
           enabled: true
           rbac:
@@ -84,10 +81,15 @@ redhat-developer-hub:
         - name: APP_CONFIG_app_baseUrl
           valueFrom:
             configMapKeyRef:
-              name: rhdh-route-configmap
+              name: rhdh-baseurl-configmap
               key: APP_CONFIG_app_baseUrl
         - name: APP_CONFIG_backend_baseUrl
           valueFrom:
             configMapKeyRef:
-              name: rhdh-route-configmap
+              name: rhdh-baseurl-configmap
               key: APP_CONFIG_backend_baseUrl
+        - name: BASEURL
+          valueFrom:
+            configMapKeyRef:
+              name: rhdh-baseurl-configmap
+              key: BASEURL
