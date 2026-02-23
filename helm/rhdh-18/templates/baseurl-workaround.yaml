@@ -10,6 +10,8 @@ spec:
   to:
     kind: Service
     name: {{ printf "%s-developer-hub" .Release.Name }}
+  port:
+    targetPort: http-backend
   tls:
     termination: edge
     insecureEdgeTerminationPolicy: Redirect

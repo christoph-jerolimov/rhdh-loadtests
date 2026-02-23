@@ -14,8 +14,32 @@ global:
         disabled: false
       - package: oci://quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.48_page-n!internal-backstage-plugin-page-n
         disabled: false
+        pluginConfig:
+          dynamicPlugins:
+            frontend:
+              internal.backstage-plugin-page-n:
+                dynamicRoutes:
+                  - path: /page-n
+                    importName: PageNPage
+                    menuItem:
+                      icon: dashboard
+                      text: Page N
       - package: oci://quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.48_catalog-tab-n!internal-backstage-plugin-catalog-tab-n
         disabled: false
+        pluginConfig:
+          dynamicPlugins:
+            frontend:
+              internal.backstage-plugin-catalog-tab-n:
+                entityTabs:
+                  - path: /catalog-tab-n
+                    title: Catalog Tab N
+                    mountPoint: entity.page.catalog-tab-n
+                mountPoints:
+                  - mountPoint: entity.page.catalog-tab-n/cards
+                    importName: EntityCatalogCardN
+                    # config:
+                    #   layout:
+                    #     gridColumn: "1 / -1"
 
 redhat-developer-hub:
   route:
@@ -26,6 +50,11 @@ redhat-developer-hub:
       appConfig:
         app:
           title: RHDH 1.9 loadtest
+
+        auth:
+          providers:
+            guest:
+              dangerouslyAllowOutsideDevelopment: true
 
         catalog:
           locations:
