@@ -15,7 +15,7 @@ spec:
   source:
     repoURL: 'https://github.com/christoph-jerolimov/rhdh-loadtests.git'
     targetRevision: HEAD
-    path: argocd/rhdh-next
+    path: helm/rhdh-next
   destination:
     name: in-cluster
     namespace: rhdh-loadtests-next
