@@ -21,42 +21,48 @@ build_container_images() {
   case "$workspace" in
     *1.42*)
       echo
-      echo "Build plugin (suffix $suffix) for Backstage 1.42 with @janus-idp/cli@3.6.1"
+      echo "Build plugins with suffix $suffix for Backstage 1.42 with @janus-idp/cli@3.6.1"
       echo
       cd "$workspace"
-      cd plugins/catalog-tab-n
-      npx --yes @janus-idp/cli@3.6.1 package package-dynamic-plugins --tag "rhdh-loadtest-plugins:bs_1.42_catalog-tab-$suffix"
-      cd ../..
       cd plugins/page-n
+      rm -rf dist dist-dynamic dist-scalprum
       npx --yes @janus-idp/cli@3.6.1 package package-dynamic-plugins --tag "rhdh-loadtest-plugins:bs_1.42_page-$suffix"
+      cd ../..
+      cd plugins/catalog-tab-n
+      rm -rf dist dist-dynamic dist-scalprum
+      npx --yes @janus-idp/cli@3.6.1 package package-dynamic-plugins --tag "rhdh-loadtest-plugins:bs_1.42_catalog-tab-$suffix"
       cd ../..
       cd ../..
 
       ;;
     *1.45*)
       echo
-      echo "Build plugin (suffix $suffix) for Backstage 1.45 plugins with @red-hat-developer-hub/cli@1.8.0"
+      echo "Build plugins with suffix $suffix for Backstage 1.45 plugins with @red-hat-developer-hub/cli@1.8.0"
       echo
       cd "$workspace"
-      cd plugins/catalog-tab-n
-      npx --yes @red-hat-developer-hub/cli@1.8.0 plugin package --tag "rhdh-loadtest-plugins:bs_1.45_catalog-tab-$suffix"
-      cd ../..
       cd plugins/page-n
+      rm -rf dist dist-dynamic dist-scalprum
       npx --yes @red-hat-developer-hub/cli@1.8.0 plugin package --tag "rhdh-loadtest-plugins:bs_1.45_page-$suffix"
+      cd ../..
+      cd plugins/catalog-tab-n
+      rm -rf dist dist-dynamic dist-scalprum
+      npx --yes @red-hat-developer-hub/cli@1.8.0 plugin package --tag "rhdh-loadtest-plugins:bs_1.45_catalog-tab-$suffix"
       cd ../..
       cd ../..
 
       ;;
     *1.48*)
       echo
-      echo "Build plugin (suffix $suffix) for Backstage 1.48 plugins with @red-hat-developer-hub/cli@1.9.1"
+      echo "Build plugins with suffix $suffix for Backstage 1.48 plugins with @red-hat-developer-hub/cli@1.9.1"
       echo
       cd "$workspace"
-      cd plugins/catalog-tab-n
-      npx --yes @red-hat-developer-hub/cli@1.9.1 plugin package --tag "rhdh-loadtest-plugins:bs_1.48_catalog-tab-$suffix"
-      cd ../..
       cd plugins/page-n
+      rm -rf dist dist-dynamic dist-scalprum
       npx --yes @red-hat-developer-hub/cli@1.9.1 plugin package --tag "rhdh-loadtest-plugins:bs_1.48_page-$suffix"
+      cd ../..
+      cd plugins/catalog-tab-n
+      rm -rf dist dist-dynamic dist-scalprum
+      npx --yes @red-hat-developer-hub/cli@1.9.1 plugin package --tag "rhdh-loadtest-plugins:bs_1.48_catalog-tab-$suffix"
       cd ../..
       cd ../..
 
@@ -84,10 +90,12 @@ for workspace in plugins/backstage-1.42 plugins/backstage-1.45 plugins/backstage
     cd ../..
   fi
 
-  # prepare_source_code "$workspace" "n"
-  # build_container_images "$workspace" "n"
+  prepare_source_code "$workspace" "n"
+  build_container_images "$workspace" "n"
 
-  for i in {1..2}; do
+  # I kept number small for testing purposes.
+  # In the end, we should build 100 images per plugin and workspace.
+  for i in {1..3}; do
     prepare_source_code "$workspace" "$i"
     build_container_images "$workspace" "$i"
   done
