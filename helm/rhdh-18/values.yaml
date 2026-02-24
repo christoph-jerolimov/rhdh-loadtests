@@ -19,6 +19,30 @@ global:
                     menuItem:
                       icon: dashboard
                       text: Page N
+      - package: oci://quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.45_page-1!internal-plugin-page-1
+        disabled: false
+        pluginConfig:
+          dynamicPlugins:
+            frontend:
+              internal.plugin-page-1:
+                dynamicRoutes:
+                  - path: /page-1
+                    importName: Page
+                    menuItem:
+                      icon: dashboard
+                      text: Page 1
+      - package: oci://quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.45_page-2!internal-plugin-page-2
+        disabled: false
+        pluginConfig:
+          dynamicPlugins:
+            frontend:
+              internal.plugin-page-2:
+                dynamicRoutes:
+                  - path: /page-2
+                    importName: Page
+                    menuItem:
+                      icon: dashboard
+                      text: Page 2
       - package: oci://quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.45_catalog-tab-n!internal-backstage-plugin-catalog-tab-n
         disabled: false
         pluginConfig:
@@ -32,9 +56,32 @@ global:
                 mountPoints:
                   - mountPoint: entity.page.catalog-tab-n/cards
                     importName: EntityCatalogCard
-                    # config:
-                    #   layout:
-                    #     gridColumn: "1 / -1"
+      - package: oci://quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.45_catalog-tab-1!internal-plugin-catalog-tab-1
+        disabled: false
+        pluginConfig:
+          dynamicPlugins:
+            frontend:
+              internal.plugin-catalog-tab-1:
+                entityTabs:
+                  - path: /catalog-tab-1
+                    title: Catalog Tab 1
+                    mountPoint: entity.page.catalog-tab-1
+                mountPoints:
+                  - mountPoint: entity.page.catalog-tab-1/cards
+                    importName: EntityCatalogCard
+      - package: oci://quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.45_catalog-tab-2!internal-plugin-catalog-tab-2
+        disabled: false
+        pluginConfig:
+          dynamicPlugins:
+            frontend:
+              internal.plugin-catalog-tab-2:
+                entityTabs:
+                  - path: /catalog-tab-2
+                    title: Catalog Tab 2
+                    mountPoint: entity.page.catalog-tab-2
+                mountPoints:
+                  - mountPoint: entity.page.catalog-tab-2/cards
+                    importName: EntityCatalogCard
 
 redhat-developer-hub:
   route:

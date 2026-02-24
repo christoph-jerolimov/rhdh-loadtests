@@ -1,92 +1,98 @@
 #!/bin/bash
 
+# This script builds hunderts of container images!
+# For each Backstage workspace it builds both plugins 100 times.
+# Currently, 3 * 2 * 101 = 606 container images will be built!
+
 set -e
 
-# This script builds different Backstage workspace with different rhdh-cli versions!
+prepare_source_code() {
+  local workspace="$1"
+  local suffix="$2"
+  # Will be executed below from the ROOT level.
+  echo
+  ./scripts/prepare-source-code.sh "$workspace" "$suffix"
+}
 
-# 1.42
-echo "Build Backstage 1.42 plugins with @janus-idp/cli"
-cd plugins/backstage-1.42
-if [ ! -d node_modules ]; then
-  yarn install
-fi
-cd plugins/catalog-tab-n
-npx --yes @janus-idp/cli@3.6.1 package package-dynamic-plugins --tag "rhdh-loadtest-plugins:bs_1.42_catalog-tab-n"
-cd ../..
-cd plugins/page-n
-npx --yes @janus-idp/cli@3.6.1 package package-dynamic-plugins --tag "rhdh-loadtest-plugins:bs_1.42_page-n"
-cd ../..
-cd ../..
+build_container_images() {
+  local workspace="$1"
+  local suffix="$2"
+  
+  case "$workspace" in
+    *1.42*)
+      echo
+      echo "Build plugin (suffix $suffix) for Backstage 1.42 with @janus-idp/cli@3.6.1"
+      echo
+      cd "$workspace"
+      cd plugins/catalog-tab-n
+      npx --yes @janus-idp/cli@3.6.1 package package-dynamic-plugins --tag "rhdh-loadtest-plugins:bs_1.42_catalog-tab-$suffix"
+      cd ../..
+      cd plugins/page-n
+      npx --yes @janus-idp/cli@3.6.1 package package-dynamic-plugins --tag "rhdh-loadtest-plugins:bs_1.42_page-$suffix"
+      cd ../..
+      cd ../..
 
-# 1.45
-echo "Build Backstage 1.45 plugins with @red-hat-developer-hub/cli@1.8.0"
-cd plugins/backstage-1.45
-if [ ! -d node_modules ]; then
-  yarn install
-fi
-cd plugins/catalog-tab-n
-npx --yes @red-hat-developer-hub/cli@1.8.0 plugin package --tag "rhdh-loadtest-plugins:bs_1.45_catalog-tab-n"
-cd ../..
-cd plugins/page-n
-npx --yes @red-hat-developer-hub/cli@1.8.0 plugin package --tag "rhdh-loadtest-plugins:bs_1.45_page-n"
-cd ../..
-cd ../..
+      ;;
+    *1.45*)
+      echo
+      echo "Build plugin (suffix $suffix) for Backstage 1.45 plugins with @red-hat-developer-hub/cli@1.8.0"
+      echo
+      cd "$workspace"
+      cd plugins/catalog-tab-n
+      npx --yes @red-hat-developer-hub/cli@1.8.0 plugin package --tag "rhdh-loadtest-plugins:bs_1.45_catalog-tab-$suffix"
+      cd ../..
+      cd plugins/page-n
+      npx --yes @red-hat-developer-hub/cli@1.8.0 plugin package --tag "rhdh-loadtest-plugins:bs_1.45_page-$suffix"
+      cd ../..
+      cd ../..
 
-# 1.48
-echo "Build Backstage 1.48 plugins with @red-hat-developer-hub/cli@1.9.1"
-cd plugins/backstage-1.48
-if [ ! -d node_modules ]; then
-  yarn install
-fi
-cd plugins/catalog-tab-n
-npx --yes @red-hat-developer-hub/cli@1.9.1 plugin package --tag "rhdh-loadtest-plugins:bs_1.48_catalog-tab-n"
-cd ../..
-cd plugins/page-n
-npx --yes @red-hat-developer-hub/cli@1.9.1 plugin package --tag "rhdh-loadtest-plugins:bs_1.48_page-n"
-cd ../..
-cd ../..
+      ;;
+    *1.48*)
+      echo
+      echo "Build plugin (suffix $suffix) for Backstage 1.48 plugins with @red-hat-developer-hub/cli@1.9.1"
+      echo
+      cd "$workspace"
+      cd plugins/catalog-tab-n
+      npx --yes @red-hat-developer-hub/cli@1.9.1 plugin package --tag "rhdh-loadtest-plugins:bs_1.48_catalog-tab-$suffix"
+      cd ../..
+      cd plugins/page-n
+      npx --yes @red-hat-developer-hub/cli@1.9.1 plugin package --tag "rhdh-loadtest-plugins:bs_1.48_page-$suffix"
+      cd ../..
+      cd ../..
 
-# prepare_source_code() {
-#   echo "Prepare source code for $workspace"
-# }
+      ;;
+    *)
+      echo "Unknown workspace version for $workspace"
+      ;;
+  esac
+}
 
-# build_container_image() {
-#   local cli="$1"
-#   local tag="$2"
+# Note: Exclude the nfs workspace for now. Will integrate that later into the 1.48 workspace.
+for workspace in plugins/backstage-1.42 plugins/backstage-1.45 plugins/backstage-1.48; do
+  if [ ! -d "$workspace" ]; then
+    continue
+  fi
 
-#   echo "Building container image for $tag"
-#   npx --yes $cli --tag "$tag"
-# }
+  echo
+  echo "Will build workspace: $workspace"
+  echo
 
-# # for 1 to 100
-# for workspace in plugins/backstage-*; do
-#   if [ ! -d "$workspace" ]; then
-#     continue
-#   fi
+  if [ ! -d "$workspace/node_modules" ]; then
+    echo "Installing node_modules for workspace $workspace"
+    cd "$workspace"
+    yarn install
+    cd ../..
+  fi
 
-#   for i in {1..100}; do
+  # prepare_source_code "$workspace" "n"
+  # build_container_images "$workspace" "n"
 
-#     echo "Processing $workspace"
+  for i in {1..2}; do
+    prepare_source_code "$workspace" "$i"
+    build_container_images "$workspace" "$i"
+  done
 
-#     cd "$workspace"
-
-#     prepare_source_code "$workspace"
-
-#     case "$workspace" in
-#       *1.42*)
-#         build_container_image "@janus-idp/cli@3.6.1" "rhdh-loadtest-plugins:bs_1.42_$i"
-#         ;;
-#       *1.45*)
-#         build_container_image "@red-hat-developer-hub/cli@1.8.0" "rhdh-loadtest-plugins:bs_1.45_$i"
-#         ;;
-#       *1.48*)
-#         build_container_image "@red-hat-developer-hub/cli@1.9.1" "rhdh-loadtest-plugins:bs_1.48_$i"
-#         ;;
-#       *)
-#         echo "Unknown workspace version for $workspace"
-#         ;;
-#     esac
-
-#     cd ../..
-#   done
-# done
+  # Use parepare to restore "-n" code again so that there should be no git diff...
+  prepare_source_code "$workspace" "n"
+  echo
+done

@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # This script builds all Backstage plugins primarily to validate them.
 
 set -e
