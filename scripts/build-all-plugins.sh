@@ -10,6 +10,10 @@ for workspace in plugins/backstage-*; do
   echo "Build $workspace"
   cd "$workspace"
 
+  if [ ! -d node_modules ]; then
+    yarn install
+  fi
+
   yarn tsc
   yarn build:all
 

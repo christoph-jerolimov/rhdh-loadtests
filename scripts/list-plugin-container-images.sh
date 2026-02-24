@@ -3,5 +3,5 @@
 set -e
 
 # list local podman containers
-podman images --filter=reference='localhost/rhdh-loadtest-plugins:*' --format '{{.Repository}}:{{.Tag}}'
+podman images --filter=reference='localhost/rhdh-loadtest-plugins:*'
 
