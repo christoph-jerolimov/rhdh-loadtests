@@ -79,7 +79,7 @@ redhat-developer-hub:
                 - allow: [Template]
 
         permission:
-          enabled: true
+          enabled: false
           rbac:
             pluginsWithPermission:
               - catalog
