@@ -82,10 +82,78 @@ upstream:
 
 ## Plugins
 
-### Page Plugin(s)
+The `plugins` folder contains multiple Backstage workspaces for different Backstage versions (1.42, 1.45 and 1.48).
+Each workspace contains currently two plugins.
+One that adds a new page to the main navigation and one that adds a new tab to the catalog details page.
 
-WIP
+The script **TODO/WIP** build these plugin 100 times with indepenend `pluginIds` to integrate these plugins multiple times into RHDH.
 
-### Entity Tabs Plugin(s)
+They are published as one container image under [jerolimov/rhdh-loadtest-plugins](https://quay.io/repository/jerolimov/rhdh-loadtest-plugins?tab=tags) with a tag for each combinaton. For example:
 
-WIP
+* `quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.42_page-n`
+* `quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.42_catalog-tab-n`
+
+The Backstage version can be replaced with `bs_1.42`, `bs_1.45` or `bs_1.45`.
+
+**TODO/WIP**: The `-n` can be replaced with a 1 to 100.
+
+To integrate these into your local setup apply these RHDH dynamic plugin configurations:
+
+**For n Page plugins**
+
+```yaml
+global:
+  dynamic:
+    plugins:
+      #                                                replace this ↓↓      ↓                      ↓
+      - package: oci://quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.42_page-n!internal-plugin-page-n
+        disabled: false
+        pluginConfig:
+          dynamicPlugins:
+            frontend:
+              #           and this ↓
+              internal.plugin-page-n:
+                dynamicRoutes:
+                  #    and this ↓
+                  - path: /page-n
+                    importName: PageNPage ## TODO: rename to Page!!!
+                    menuItem:
+                      icon: dashboard
+                      # and this ↓
+                      text: Page N
+```
+
+You can pick up a complete example in [helm/rhdh-18/values.yaml](helm/rhdh-18/values.yaml).
+
+**For n Entity Tabs plugins**
+
+```yaml
+global:
+  dynamic:
+    plugins:
+      #                                                replace this ↓↓             ↓                             ↓
+      - package: oci://quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.42_catalog-tab-n!internal-plugin-catalog-tab-n
+        disabled: false
+        pluginConfig:
+          dynamicPlugins:
+            frontend:
+              #                  and this ↓
+              internal.plugin-catalog-tab-n:
+                entityTabs:
+                  #           and this ↓
+                  - path: /catalog-tab-n
+                    #         and this ↓
+                    title: Catalog Tab N
+                    #                          and this ↓
+                    mountPoint: entity.page.catalog-tab-n
+                mountPoints:
+                  #                            and this ↓
+                  - mountPoint: entity.page.catalog-tab-n/cards
+                    importName: EntityCatalogCardN ## TODO: rename to EntityCatalogCardN!!!
+```
+
+You can pick up a complete example in [helm/rhdh-18/values.yaml](helm/rhdh-18/values.yaml).
+
+## RBAC
+
+TODO / Coming soon...
