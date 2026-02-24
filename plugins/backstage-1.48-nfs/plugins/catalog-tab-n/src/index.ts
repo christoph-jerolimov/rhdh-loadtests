@@ -1,1 +1,1 @@
-export { catalogTabNPlugin as default } from './plugin';
+export { catalogTabPlugin as default } from './plugin';

@@ -5,16 +5,16 @@ import {
 
 import { rootRouteRef } from './routes';
 
-export const pageNPlugin = createPlugin({
+export const pagePlugin = createPlugin({
   id: 'page-n',
   routes: {
     root: rootRouteRef,
   },
 });
 
-export const PageNPage = pageNPlugin.provide(
+export const Page = pagePlugin.provide(
   createRoutableExtension({
-    name: 'PageNPage',
+    name: 'Page',
     component: () =>
       import('./components/ExampleComponent').then(m => m.ExampleComponent),
     mountPoint: rootRouteRef,

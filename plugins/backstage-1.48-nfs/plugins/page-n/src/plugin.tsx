@@ -26,7 +26,7 @@ const navItem = NavItemBlueprint.make({
   },
 });
 
-export const pageNPlugin = createFrontendPlugin({
+export const pagePlugin = createFrontendPlugin({
   pluginId: 'page-n',
   extensions: [page, navItem],
   routes: {

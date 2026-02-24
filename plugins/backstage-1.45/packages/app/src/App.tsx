@@ -38,7 +38,7 @@ import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/
 import { NotificationsPage } from '@backstage/plugin-notifications';
 import { SignalsDisplay } from '@backstage/plugin-signals';
 
-import { PageNPage } from '@internal/backstage-plugin-page-n';
+import { Page } from '@internal/backstage-plugin-page-n';
 
 const app = createApp({
   apis,
@@ -99,7 +99,7 @@ const routes = (
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/catalog-graph" element={<CatalogGraphPage />} />
     <Route path="/notifications" element={<NotificationsPage />} />
-    <Route path="/page-n" element={<PageNPage />} />
+    <Route path="/page-n" element={<Page />} />
   </FlatRoutes>
 );
 

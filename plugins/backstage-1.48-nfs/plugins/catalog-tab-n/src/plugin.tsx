@@ -5,8 +5,8 @@ import {
   EntityContentBlueprint,
 } from '@backstage/plugin-catalog-react/alpha';
 
-export const entityCatalogCardN: any = EntityContentBlueprint.make({
-  name: 'entityCatalogCardN',
+export const EntityCatalogCard: any = EntityContentBlueprint.make({
+  name: 'EntityCatalogCard',
   params: {
     path: 'catalog-tab-n',
     title: 'Catalog Tab N',
@@ -17,7 +17,7 @@ export const entityCatalogCardN: any = EntityContentBlueprint.make({
   },
 });
 
-export const catalogTabNPlugin = createFrontendPlugin({
+export const catalogTabPlugin = createFrontendPlugin({
   pluginId: 'catalog-tab-n',
-  extensions: [entityCatalogCardN],
+  extensions: [EntityCatalogCard],
 });

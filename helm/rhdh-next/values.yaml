@@ -20,7 +20,7 @@ global:
               internal.backstage-plugin-page-n:
                 dynamicRoutes:
                   - path: /page-n
-                    importName: PageNPage
+                    importName: Page
                     menuItem:
                       icon: dashboard
                       text: Page N
@@ -36,7 +36,7 @@ global:
                     mountPoint: entity.page.catalog-tab-n
                 mountPoints:
                   - mountPoint: entity.page.catalog-tab-n/cards
-                    importName: EntityCatalogCardN
+                    importName: EntityCatalogCard
                     # config:
                     #   layout:
                     #     gridColumn: "1 / -1"

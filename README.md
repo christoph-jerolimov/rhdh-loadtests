@@ -88,7 +88,7 @@ One that adds a new page to the main navigation and one that adds a new tab to t
 
 The script **TODO/WIP** build these plugin 100 times with indepenend `pluginIds` to integrate these plugins multiple times into RHDH.
 
-They are published as one container image under [jerolimov/rhdh-loadtest-plugins](https://quay.io/repository/jerolimov/rhdh-loadtest-plugins?tab=tags) with a tag for each combinaton. For example:
+They are published as one container image under [quay.io/jerolimov/rhdh-loadtest-plugins](https://quay.io/repository/jerolimov/rhdh-loadtest-plugins?tab=tags) with a tag for each combinaton. For example:
 
 * `quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.42_page-n`
 * `quay.io/jerolimov/rhdh-loadtest-plugins:bs_1.42_catalog-tab-n`
@@ -116,7 +116,7 @@ global:
                 dynamicRoutes:
                   #    and this ↓
                   - path: /page-n
-                    importName: PageNPage ## TODO: rename to Page!!!
+                    importName: Page
                     menuItem:
                       icon: dashboard
                       # and this ↓
@@ -149,7 +149,7 @@ global:
                 mountPoints:
                   #                            and this ↓
                   - mountPoint: entity.page.catalog-tab-n/cards
-                    importName: EntityCatalogCardN ## TODO: rename to EntityCatalogCardN!!!
+                    importName: EntityCatalogCard
 ```
 
 You can pick up a complete example in [helm/rhdh-18/values.yaml](helm/rhdh-18/values.yaml).

@@ -1,10 +1,10 @@
 import { createDevApp } from '@backstage/dev-utils';
-import { pageNPlugin, PageNPage } from '../src/plugin';
+import { pagePlugin, Page } from '../src/plugin';
 
 createDevApp()
-  .registerPlugin(pageNPlugin)
+  .registerPlugin(pagePlugin)
   .addPage({
-    element: <PageNPage />,
+    element: <Page />,
     title: 'Root Page',
     path: '/page-n',
   })

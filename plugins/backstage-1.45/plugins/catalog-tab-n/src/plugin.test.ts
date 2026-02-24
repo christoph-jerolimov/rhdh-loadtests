@@ -1,7 +1,7 @@
-import { catalogTabNPlugin } from './plugin';
+import { catalogTabPlugin } from './plugin';
 
 describe('catalog-tab-n', () => {
   it('should export plugin', () => {
-    expect(catalogTabNPlugin).toBeDefined();
+    expect(catalogTabPlugin).toBeDefined();
   });
 });

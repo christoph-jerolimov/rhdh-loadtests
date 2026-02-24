@@ -58,7 +58,7 @@ import {
   isKubernetesAvailable,
 } from '@backstage/plugin-kubernetes';
 
-import { EntityCatalogCardN } from '@internal/backstage-plugin-catalog-tab-n';
+import { EntityCatalogCard } from '@internal/backstage-plugin-catalog-tab-n';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -190,7 +190,7 @@ const serviceEntityPage = (
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/catalog-tab-n" title="Catalog Tab N">
-      <EntityCatalogCardN />
+      <EntityCatalogCard />
     </EntityLayout.Route>
   </EntityLayout>
 );
@@ -229,7 +229,7 @@ const websiteEntityPage = (
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/catalog-tab-n" title="Catalog Tab N">
-      <EntityCatalogCardN />
+      <EntityCatalogCard />
     </EntityLayout.Route>
   </EntityLayout>
 );
@@ -252,7 +252,7 @@ const defaultEntityPage = (
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/catalog-tab-n" title="Catalog Tab N">
-      <EntityCatalogCardN />
+      <EntityCatalogCard />
     </EntityLayout.Route>
   </EntityLayout>
 );
@@ -343,7 +343,7 @@ const groupPage = (
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/catalog-tab-n" title="Catalog Tab N">
-      <EntityCatalogCardN />
+      <EntityCatalogCard />
     </EntityLayout.Route>
   </EntityLayout>
 );

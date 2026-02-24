@@ -1,1 +1,1 @@
-export { pageNPlugin, PageNPage } from './plugin';
+export { pagePlugin, Page } from './plugin';

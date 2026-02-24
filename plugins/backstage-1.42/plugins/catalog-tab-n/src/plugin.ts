@@ -3,13 +3,13 @@ import {
   createPlugin,
 } from '@backstage/core-plugin-api';
 
-export const catalogTabNPlugin = createPlugin({
+export const catalogTabPlugin = createPlugin({
   id: 'catalog-tab-n',
 });
 
-export const EntityCatalogCardN = catalogTabNPlugin.provide(
+export const EntityCatalogCard = catalogTabPlugin.provide(
   createComponentExtension({
-    name: 'EntityCatalogCardN',
+    name: 'EntityCatalogCard',
     component: {
       lazy: () =>
         import('./components/ExampleComponent').then(m => m.ExampleComponent),
