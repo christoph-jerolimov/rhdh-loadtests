@@ -8,7 +8,7 @@ spec:
   sourceRepos:
     - '*'
   destinations:
-    - namespace: 'rhdh-loadtests-*'
+    - namespace: '*'
       server: '*'
   clusterResourceWhitelist:
     - group: '*'
